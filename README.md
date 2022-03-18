@@ -11,7 +11,7 @@ TBA
 Here's an example of a `docker-compose.yml` file
 ```yaml
 question2answer:
-    image: wiesom/question2answer
+    image: ofekedri/question2answer:php8_0_q2a_1.8.6
     links:
         - db:mysql
     environment:
@@ -21,7 +21,7 @@ question2answer:
 
 
 db:
-    image: mariadb
+    image: mysql:8
     environment:
         MYSQL_USER: question2answer_user
         MYSQL_PASSWORD: 123456

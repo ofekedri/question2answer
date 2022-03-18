@@ -16,7 +16,7 @@ question2answer:
         - db:mysql
     environment:
         QUESTION2ANSWER_DB_USER: question2answer_user
-        QUESTION2ANSWER_DB_PASSWORD: 123456
+        QUESTION2ANSWER_DB_PASSWORD: 12345678
         QUESTION2ANSWER_DB_NAME: question2answer
 
 
@@ -24,7 +24,7 @@ db:
     image: mysql:8
     environment:
         MYSQL_USER: question2answer_user
-        MYSQL_PASSWORD: 123456
+        MYSQL_PASSWORD: 12345678
         MYSQL_DATABASE: question2answer
         MYSQL_ROOT_PASSWORD: <something secret>
 

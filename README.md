@@ -11,7 +11,7 @@ TBA
 Here's an example of a `docker-compose.yml` file
 ```yaml
 question2answer:
-    image: ofekedri/question2answer:php8_0_q2a_1.8.6
+    image: ofekedri/question2answer:latest
     links:
         - db:mysql
     environment:

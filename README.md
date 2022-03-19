@@ -4,8 +4,11 @@ Question2Answer docker image
 ## Using plain docker
 TBA
 
-## Using docker-compose
-TBA
+## Deploy q2a for kubernetes
+```
+kubectl apply -f kubernetes/q2a 
+kubectl apply -f kubernetes/mysql 
+```
 
 
 Here's an example of a `docker-compose.yml` file

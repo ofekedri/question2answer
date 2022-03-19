@@ -10,7 +10,7 @@ kubectl apply -f kubernetes/q2a
 kubectl apply -f kubernetes/mysql 
 ```
 
-
+## Docker-compose
 Here's an example of a `docker-compose.yml` file
 ```yaml
 question2answer:

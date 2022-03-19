@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: q2a-config
+data:
+  QUESTION2ANSWER_DB_USER: "question2answer_user"
+  QUESTION2ANSWER_DB_NAME: "question2answer"
+  QUESTION2ANSWER_DB_HOST: "mysql-q2a"

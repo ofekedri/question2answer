@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: q2a-deployment
+  labels:
+    app: q2a
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: q2a
+  template:
+    metadata:
+      labels:
+        app: q2a
+    spec:
+      containers:
+      - name: q2a
+        image: ofekedri/question2answer:php8_0_q2a_1.8.6
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: q2a-config
+        - secretRef:
+            name: q2a-db
+
+  

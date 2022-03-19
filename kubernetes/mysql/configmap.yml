@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+data:
+  MYSQL_USER: "question2answer_user"
+  MYSQL_DATABASE: "question2answer"

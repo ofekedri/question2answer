@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: q2a
+  namespace: q2a
+spec:
+  selector:
+    app: q2a
+    tier: frontend
+  type: ClusterIP
+  ports:
+  - name: q2a-http
+    protocol: TCP
+    port: 80
+    targetPort: 80

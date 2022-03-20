@@ -12,7 +12,6 @@ RUN apt-get update && apt-get install -y \
     docker-php-ext-install gd calendar
 
 
-RUN ls
 ENV Q2A_VERSION 1.8.6
 ENV Q2A_FILE_NAME question2answer-${Q2A_VERSION}.zip
 ENV Q2A_DOWNLOAD_URL https://github.com/q2a/question2answer/releases/download/v${Q2A_VERSION}/${Q2A_FILE_NAME}

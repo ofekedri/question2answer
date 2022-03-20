@@ -9,10 +9,12 @@ spec:
   selector:
     matchLabels:
       app: q2a
+      tier: frontend
   template:
     metadata:
       labels:
         app: q2a
+        tier: frontend
     spec:
       containers:
       - name: q2a

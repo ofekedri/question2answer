@@ -1,0 +1,26 @@
+version: '3'
+services:
+  app:
+    image: ofekedri/question2answer:php8_0_q2a_1.8.6_clean
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+        QUESTION2ANSWER_DB_USER: question2answer_user
+        QUESTION2ANSWER_DB_PASSWORD: 12345678
+        QUESTION2ANSWER_DB_NAME: question2answer
+        QUESTION2ANSWER_BASE_DIR: "/"
+    volumes:
+        - ~/Downloads/q-a/:/var/www/html/
+  db:
+    image: mysql:8
+    environment:
+        MYSQL_USER: question2answer_user
+        MYSQL_PASSWORD: 12345678
+        MYSQL_DATABASE: question2answer
+        MYSQL_ROOT_PASSWORD: esgersgrsegesrg
+    networks:
+      default:
+        aliases:
+          - mysql

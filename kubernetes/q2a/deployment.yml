@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: q2a-deployment
+  namespace: q2a
   labels:
     app: q2a
 spec:
